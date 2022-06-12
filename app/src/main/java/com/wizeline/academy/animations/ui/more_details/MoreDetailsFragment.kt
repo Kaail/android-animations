@@ -1,6 +1,8 @@
 package com.wizeline.academy.animations.ui.more_details
 
+import android.R as AndroidR
 import android.os.Bundle
+import android.transition.TransitionInflater
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -34,5 +36,8 @@ class MoreDetailsFragment : Fragment() {
         viewModel.title.observe(viewLifecycleOwner) { binding.tvTitle.text = it }
         viewModel.content.observe(viewLifecycleOwner) { binding.tvFullTextContent.text = it }
         viewModel.fetchData(args.contentIndex)
+
+        sharedElementEnterTransition = TransitionInflater.from(requireContext())
+            .inflateTransition(AndroidR.transition.move)
     }
 }
