@@ -62,7 +62,7 @@ class SplashFragment : Fragment() {
     }
 
     private fun goToHomeScreen() {
-        val directions = SplashFragmentDirections.toMainFragment()
+        val directions = SplashFragmentDirections.toHomeFragment()
         findNavController().navigate(directions)
     }
 
