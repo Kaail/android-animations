@@ -1,3 +1,8 @@
 <resources>
     <string name="app_name">AnimationsDemoWizelineAcademy</string>
+    <string name="shared_item_image">sharedImage</string>
+    <string name="shared_item_title">sharedTitle</string>
+    <string name="shared_item_description">sharedDescription</string>
+    <string name="selected_item_image">Selected item image</string>
+    <string name="more_details_button_text">More details</string>
 </resources>
