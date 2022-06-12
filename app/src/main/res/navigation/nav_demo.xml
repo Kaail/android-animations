@@ -11,14 +11,16 @@
         android:label="SplashFragment"
         tools:layout="@layout/splash_fragment">
         <action
-            android:id="@+id/toMainFragment"
-            app:destination="@id/mainFragment" />
+            android:id="@+id/toHomeFragment"
+            app:destination="@id/homeFragment"
+            app:enterAnim="@anim/slide_in_bottom"
+            app:exitAnim="@anim/slide_out_top" />
     </fragment>
 
     <fragment
-        android:id="@+id/mainFragment"
+        android:id="@+id/homeFragment"
         android:name="com.wizeline.academy.animations.ui.home.HomeFragment"
-        android:label="MainFragment"
+        android:label="HomeFragment"
         tools:layout="@layout/home_fragment">
         <action
             android:id="@+id/toDetailFragment"
