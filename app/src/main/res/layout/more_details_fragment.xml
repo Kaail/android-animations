@@ -27,6 +27,7 @@
         android:src="@drawable/sample_img"
         android:contentDescription="@string/selected_item_image"
         android:transitionName="@string/shared_item_image"
+        android:translationZ="@dimen/more_details_img_translation_z"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/tvTitle" />
